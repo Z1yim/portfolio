@@ -4,13 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient {
-  background: linear-gradient(
+:root {
+  --gradient: linear-gradient(
     160deg,
     rgba(62, 56, 182, 1) 0%,
     rgba(146, 63, 204, 1) 47%,
     rgba(252, 69, 226, 1) 100%
   );
+}
+
+.gradient {
+  background-image: var(--gradient);
+}
+
+header {
+  background: radial-gradient(ellipse at top, #1b2735 0%, #00000000 70%);
 }
 
 .section__seperator {
@@ -20,12 +28,7 @@
 .section__seperator::before {
   content: "";
   position: absolute;
-  background: linear-gradient(
-    160deg,
-    rgba(62, 56, 182, 1) 0%,
-    rgba(146, 63, 204, 1) 47%,
-    rgba(252, 69, 226, 1) 100%
-  );
+  background: var(--gradient);
   top: 0;
   left: 0;
   height: 0.5rem;

@@ -1,10 +1,33 @@
 import React, { useState } from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FiGithub } from "react-icons/fi";
-import Image from "next/image";
 
 export default function Card({ project }) {
   const [imageHovered, setImageHovered] = useState(false);
+
+  let githubButton, sourceButton;
+
+  if (project.github) {
+    githubButton = (
+      <a
+        href={project.github}
+        className="w-10 h-10 bg-white text-black flex justify-center items-center rounded-full hover:bg-gray-600 hover:text-white"
+      >
+        <FiGithub className="text-2xl" />
+      </a>
+    );
+  }
+
+  if (project.visit) {
+    sourceButton = (
+      <a
+        href={project.visit}
+        className="w-10 h-10 bg-white text-black flex justify-center items-center rounded-full hover:bg-gray-600 hover:text-white"
+      >
+        <HiOutlineExternalLink className="text-2xl" />
+      </a>
+    );
+  }
 
   return (
     <div className="flex items-center my-10">
@@ -13,12 +36,8 @@ export default function Card({ project }) {
         onMouseEnter={() => setImageHovered(true)}
         onMouseLeave={() => setImageHovered(false)}
       >
-        <Image
-          src={project.image}
-          alt="Image of project"
-          layout="fixed"
-          className="rounded"
-        />
+        {project.image}
+
         {!imageHovered && (
           <div className="absolute top-0 w-full h-full bg-black bg-opacity-50"></div>
         )}
@@ -29,7 +48,9 @@ export default function Card({ project }) {
           {project.title}
         </h3>
 
-        <p className="text-lg rounded-lg">{project.description}</p>
+        {project.description.map((p) => (
+          <p className="text-lg rounded-lg">{p}</p>
+        ))}
 
         <ul className="flex gap-5">
           {project.techs.map((tech) => (
@@ -43,18 +64,8 @@ export default function Card({ project }) {
         </ul>
 
         <div className="flex gap-5">
-          <a
-            href={project.github}
-            className="w-10 h-10 bg-white text-black flex justify-center items-center rounded-full hover:bg-gray-600 hover:text-white"
-          >
-            <FiGithub className="text-2xl" />
-          </a>
-          <a
-            href={project.visit}
-            className="w-10 h-10 bg-white text-black flex justify-center items-center rounded-full hover:bg-gray-600 hover:text-white"
-          >
-            <HiOutlineExternalLink className="text-2xl" />
-          </a>
+          {githubButton}
+          {sourceButton}
         </div>
       </div>
     </div>

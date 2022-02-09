@@ -7,7 +7,7 @@ export default function AboutMe() {
     <section className="w-full section__padding min-h-screen">
       <SectionHeading heading="About Me" />
       <article className="text-center">
-        <h3 className="mt-10 mb-5 text-4xl font-bold pb-4">My Education</h3>
+        <h3 className="mt-20 mb-5 text-4xl font-bold pb-4">My Education</h3>
         <h4 className="pb-5 text-2xl font-bold">
           Queensland University of Technology (2020 - current)
         </h4>
