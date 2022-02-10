@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skill({ prop }) {
   return (
-    <div className="flex-1 flex flex-col items-center text-center border-r last:border-none my-10">
+    <div className="flex-1 flex flex-col items-center text-center xl:border-r last:border-none my-10">
       {prop.icon}
       <h3 className="my-5 text-3xl font-bold text-purple-500">
         {prop.heading}

@@ -5,13 +5,12 @@ import SectionHeading from "./SectionHeading";
 
 export default function Projects() {
   return (
-    <section className="w-full section__padding min-h-screen">
+    <section className="w-full section__padding min-h-screen" id="projects">
       <SectionHeading heading="Projects" />
-      <div>
-        {projects.map((project) => (
-          <Card key={project.id} project={project} />
-        ))}
-      </div>
+
+      {projects.map((project) => (
+        <Card key={project.id} project={project} />
+      ))}
     </section>
   );
 }

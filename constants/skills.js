@@ -10,10 +10,10 @@ export const skills = [
     icon: <FaReact className={iconStyle} />,
     heading: "Frontend",
     list: [
-      "HTML",
-      "CSS",
-      "React",
-      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "React.js",
       "Next.js",
       "Bootstrap",
       "Tailwind CSS",
@@ -28,7 +28,7 @@ export const skills = [
   {
     id: 2,
     icon: <BsCodeSlash className={iconStyle} />,
-    heading: "Other Skills",
-    list: ["C", "C#", "Python", "Figma"],
+    heading: "Other Technical Skills",
+    list: ["C", "C#", "Python", "Figma", "Project Management (AGILE, SCRUM)"],
   },
 ];

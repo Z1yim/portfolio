@@ -9,16 +9,16 @@ export const projects = [
     ],
     image: (
       <Image
-        src="/images/portfolio.jpg"
+        src="/images/portfolio.png"
         alt="Image of project"
-        width="1438"
-        height="810"
+        width="1694"
+        height="953"
         className="rounded transition hover:scale-90 ease-in duration-100"
       />
     ),
     techs: ["Next.js", "React", "Tailwind CSS", "JavaScript"],
-    github: "https://google.com",
-    visit: "https://google.com",
+    github: "https://github.com/tymarcowong/portfolio",
+    visit: "https://marcowong.herokuapp.com/",
   },
   {
     id: 1,

@@ -30,7 +30,7 @@ export default function Card({ project }) {
   }
 
   return (
-    <div className="flex items-center my-10">
+    <div className="xl:flex items-center my-10">
       <div
         className="flex-1 relative"
         onMouseEnter={() => setImageHovered(true)}
@@ -43,16 +43,18 @@ export default function Card({ project }) {
         )}
       </div>
 
-      <div className="flex-1 flex flex-col items-start justify-center gap-5 -ml-20 z-50">
+      <div className="flex-1 flex flex-col items-start justify-center gap-5 my-14 xl:my-0 xl:-ml-20 z-50">
         <h3 className="font-bold text-2xl mb-1 heading__seperator pb-2">
           {project.title}
         </h3>
 
-        {project.description.map((p) => (
-          <p className="text-lg rounded-lg">{p}</p>
+        {project.description.map((p, i) => (
+          <p key={i} className="text-lg rounded-lg">
+            {p}
+          </p>
         ))}
 
-        <ul className="flex gap-5">
+        <ul className="flex flex-wrap gap-5">
           {project.techs.map((tech) => (
             <li
               key={tech}
