@@ -26,10 +26,10 @@ export default function AboutMe() {
         <p className="text-xl pb-10">
           Full Stack App Development Experience
           <br />
-          Using AGILE project management, I've worked with a group of QUT
-          students to design and develop a web application that allows hospital
-          staffs to manage and cover empty shifts across different hospitals and
-          wards. React.js and JavaScript are used mainly for the project.
+          Using AGILE project management, I worked with a group of QUT student
+          to design and develop a web application that allows hospital staffs to
+          manage and cover empty shifts across different hospitals and wards.
+          React.js and JavaScript are used mainly for the project.
         </p>
       </article>
 
