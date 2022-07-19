@@ -14,22 +14,22 @@ export default function AboutMe() {
         <p className="text-xl pb-10">
           Bachelor of Information Technology <br />
           Major: Computer Science | Minor and electives: CGI (3D character
-          modeling), UI/UX Design
+          modeling), UI/UX Design, Web Development
         </p>
       </article>
 
       <article className="text-center">
         <h3 className="mt-20 mb-5 text-4xl font-bold pb-4">My Experience</h3>
         <h4 className="pb-5 text-2xl font-bold">
-          Metro North Health (2021 - current)
+          Metro North Health (2021 - 2022)
         </h4>
         <p className="text-xl pb-10">
           Full Stack App Development Experience
           <br />
-          Worked on a team to design and develop a web application that allows
-          hospital staffs to manage and cover empty shifts across different
-          hospitals and wards. React.js and JavaScript are used mainly for the
-          project.
+          Using AGILE project management, I've worked with a group of QUT
+          students to design and develop a web application that allows hospital
+          staffs to manage and cover empty shifts across different hospitals and
+          wards. React.js and JavaScript are used mainly for the project.
         </p>
       </article>
 

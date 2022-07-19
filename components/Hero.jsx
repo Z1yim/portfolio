@@ -15,9 +15,11 @@ export default function Hero() {
         <h3 className="text-3xl leading-loose">Frontend Web-Developer</h3>
 
         <CenterParagraph
-          content="I build interactive, responsive, accessible websites! I've started my
-        web-dev journey a year ago and I am constantly learning new skills to
-        become a better dev."
+          content="A year 3 undergraduate in Queensland University of 
+Technology with experience in JavaScript, Node.js, 
+and other web development technologies. Looking for 
+a front-end web developer position to design and 
+develop web applications."
         />
 
         <Link
