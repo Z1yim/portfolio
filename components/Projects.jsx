@@ -11,6 +11,17 @@ export default function Projects() {
       {projects.map((project) => (
         <Card key={project.id} project={project} />
       ))}
+
+      <p className="text-lg">
+        Check out my{" "}
+        <a
+          href="https://github.com/tymarcowong"
+          className="text-blue-400 underline"
+        >
+          GitHub
+        </a>{" "}
+        for more of my university / personal projects.
+      </p>
     </section>
   );
 }

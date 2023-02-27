@@ -6,7 +6,7 @@ const iconStyle = "w-10 h-10";
 
 export const skills = [
   {
-    id: 0,
+    id: "frontend",
     icon: <FaReact className={iconStyle} />,
     heading: "Frontend",
     list: [
@@ -17,18 +17,29 @@ export const skills = [
       "Next.js",
       "Bootstrap",
       "Tailwind CSS",
+      "SASS",
+      "Material UI",
     ],
   },
   {
-    id: 1,
+    id: "backend",
     icon: <FiDatabase className={iconStyle} />,
     heading: "Backend",
     list: ["mySQL, SQLite", "Node.js", "Express.js", "Python Flask"],
   },
   {
-    id: 2,
+    id: "other",
     icon: <BsCodeSlash className={iconStyle} />,
     heading: "Other Technical Skills",
-    list: ["C", "C#", "Python", "Figma", "Project Management (AGILE, SCRUM)"],
+    list: [
+      "C",
+      "C#",
+      ".NET",
+      "Python",
+      "Git",
+      "Figma",
+      "Amazon Web Serivce (AWS)",
+      "Project Management (AGILE, SCRUM)",
+    ],
   },
 ];
