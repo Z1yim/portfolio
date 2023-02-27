@@ -12,11 +12,11 @@ export default function Hero() {
           Marco Wong
         </h2>
 
-        <h3 className="text-3xl leading-loose">Frontend Web-Developer</h3>
+        <h3 className="text-3xl leading-loose">Web-Developer</h3>
 
         <CenterParagraph
-          content="A year 3 undergraduate in Queensland University of 
-Technology with experience in JavaScript, Node.js, 
+          content="A motivated grauate from Queensland University of 
+Technology. Majored in computer science and minored in 3D modelling, web development and UI/UX design. Experienced with JavaScript, Node.js, 
 and other web development technologies. Looking for 
 a front-end web developer position to design and 
 develop web applications."
